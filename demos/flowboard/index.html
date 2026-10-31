@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,follow">
+  <meta name="theme-color" content="#F7F3E9">
+  <title>Flowboard — SDB Web Studio Concept Demo</title>
+  <meta name="description" content="Browser-local task board JavaScript demo with task creation, status management, filters and local persistence.">
+  <link rel="stylesheet" href="../../demos/demo.css">
+  <script defer src="../../demos/demo.js"></script>
+</head><body class="demo-flowboard">
+  <div class="demo-disclosure"><a href="../../portfolio/">← SDB Web Studio Portfolio</a><span>Personal frontend demo · Fictional concept · No real transactions</span></div>
+  <main id="main">
+    <header class="flow-header"><a class="flow-logo" href="#top"><span class="flow-logo-symbol">✳</span> flowboard<span class="flow-sup">demo</span></a><span>Lightweight planning for better days.</span><a href="../../portfolio/flowboard/">Case study ↗</a></header>
+    <section class="flow-hero" id="top"><div><span class="demo-eyebrow">JAVASCRIPT APP / CONCEPT 003</span><h1>Make room<br>for <em>progress.</em></h1><p>A working task-board prototype. Add a task, move it forward, filter by status, or delete it. Everything stays in your browser.</p></div><div class="flow-hero-art" aria-hidden="true"><span>NOW</span><strong>DO<br>THE<br>THING.</strong><i>↗</i></div></section>
+    <section class="flow-app" aria-labelledby="task-heading"><div class="flow-app-top"><div><span class="demo-eyebrow">THE WORKSPACE</span><h2 id="task-heading">Today's board <span id="task-count">0</span></h2></div><button type="button" id="flow-reset" class="flow-quiet-button">Reset demo tasks ↺</button></div>
+      <form class="flow-add" id="flow-task-form"><label class="sr-only" for="flow-task-input">Task description</label><input id="flow-task-input" name="task" required maxlength="120" placeholder="What are you working on?"><label class="sr-only" for="flow-status">Initial task status</label><select id="flow-status" name="status"><option value="todo">To do</option><option value="doing">In progress</option><option value="done">Done</option></select><button type="submit">+ Add task</button></form>
+      <div class="flow-filters" role="group" aria-label="Filter tasks"><button type="button" data-flow-filter="all" aria-pressed="true">All</button><button type="button" data-flow-filter="todo" aria-pressed="false">To do</button><button type="button" data-flow-filter="doing" aria-pressed="false">In progress</button><button type="button" data-flow-filter="done" aria-pressed="false">Done</button></div>
+      <div class="flow-columns" id="flow-columns" aria-live="polite"></div><p class="flow-hint">Demo data is stored only in this browser's localStorage. There is no account, sync, database or server.</p>
+    </section>
+  </main>
+  <footer class="demo-footer"><p>Concept designed and coded for SDB Web Studio. Not a real company, booking service or client project.</p><a href="../../portfolio/">Back to all projects ↗</a></footer>
+</body></html>

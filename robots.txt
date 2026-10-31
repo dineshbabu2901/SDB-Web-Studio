@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+# Set SDB_SITE_URL and rebuild to generate a correct absolute sitemap.
