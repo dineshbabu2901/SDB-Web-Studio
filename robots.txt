@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-# Set SDB_SITE_URL and rebuild to generate a correct absolute sitemap.
+
+Sitemap: https://sdbwebstudio.pages.dev/sitemap.xml
